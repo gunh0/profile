@@ -4,7 +4,7 @@
  * Copyright 2022 Fonticons, Inc.
  */
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-family: var(--fa-style-family, "Noto Sans Korean");
   font-weight: var(--fa-style, 900); }
 
 .fa,
