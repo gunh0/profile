@@ -11077,17 +11077,32 @@ a.theme-btn-on-bg:active,
 
 .resume-experience-item-heading {
 	font-size: 1rem;
+	padding-top: 0.5rem;
 }
 
 .resume-experience-item-desc {
 	font-size: 0.9rem;
-	padding-left: 2rem;
 	padding-bottom: 0.5rem;
+	padding-left: 2rem;
 }
 
-.resume-act-item-desc-heading {
+.resume-experience-item-time {
+	color: #aab4c3;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-top: 0.5rem;
+}
+
+.resume-act-item-heading {
 	font-size: 1rem;
-	padding-bottom: 0.4rem;
+	padding-top: 0.5rem;
+}
+
+.resume-act-item-time {
+	color: #aab4c3;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-top: 0.5rem;
 }
 
 .resume-skills-cat {
@@ -11126,7 +11141,7 @@ a.theme-btn-on-bg:active,
 
 .resume-award-desc {
 	font-size: 0.875rem;
-	padding-left: 0.5rem;
+	padding-left: 0.6rem;
 }
 
 .resume-award-time {
