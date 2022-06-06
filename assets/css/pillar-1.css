@@ -11058,31 +11058,64 @@ a.theme-btn-on-bg:active,
 .resume-position-time-inline-end {
 	font-size: 0.875rem;
 	color: #aab4c3;
-	display: inline-block;
+	display: block;
 	float: right;
 }
 
 .resume-position-title {
 	font-size: 1.125rem;
 	color: #434e5e;
+	font-weight: bold;
 }
 
-.resume-timeline-item-desc-heading {
+/* 타임라인 설명 */
+.resume-pro-experience-desc {
 	font-size: 1rem;
+	/* font-weight: bold; */
+	padding-bottom: 0.5rem;
 }
 
-.resume-timeline-item-under-desc-heading {
-	font-size: 0.9rem;
-}
-
-.resume-experience-item-heading {
+/* 타임라인 내부 대분류 제목 */
+.resume-timeline-detail-heading {
 	font-size: 1rem;
+	font-weight: bold;
 	padding-top: 0.5rem;
 }
 
+/* 타임라인 내부 item 전체 */
+.resume-pro-experience-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+/* 타임라인 내부 item 제목 */
+.resume-pro-experience-item-heading {
+	font-size: 1rem;
+	/* font-weight: bold; */
+}
+
+/* 타임라인 내부 item 설명 */
+.resume-pro-experience-item-desc {
+	font-size: 0.9rem;
+	padding-left: 2rem;
+}
+
+/* Experience 항목 전체 */
+.resume-experience-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+/* Experience 항목 제목 */
+.resume-experience-item-heading {
+	font-size: 1rem;
+}
+
+/* Experience 항목 설명 */
 .resume-experience-item-desc {
 	font-size: 0.9rem;
-	padding-bottom: 0.5rem;
 	padding-left: 2rem;
 }
 
@@ -11090,19 +11123,21 @@ a.theme-btn-on-bg:active,
 	color: #aab4c3;
 	font-size: 0.875rem;
 	font-weight: 500;
-	padding-top: 0.5rem;
+}
+
+.resume-act-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
 }
 
 .resume-act-item-heading {
 	font-size: 1rem;
-	padding-top: 0.5rem;
 }
 
-.resume-act-item-time {
-	color: #aab4c3;
-	font-size: 0.875rem;
-	font-weight: 500;
-	padding-top: 0.5rem;
+.resume-act-item-desc {
+	font-size: 0.9rem;
+	padding-left: 2rem;
 }
 
 .resume-skills-cat {
@@ -11116,6 +11151,7 @@ a.theme-btn-on-bg:active,
 }
 
 .resume-degree {
+	font-size: 0.9rem;
 	color: #434e5e;
 }
 
