@@ -5,3 +5,10 @@ description: ""
 baseurl: ""
 url: ""
 logo: ""
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-7HL7E84JRN"
+    anonymize_ip: # true, false (default)
