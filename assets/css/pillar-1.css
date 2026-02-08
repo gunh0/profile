@@ -10944,7 +10944,7 @@ a.theme-btn-on-bg:active,
 }
 
 .resume-wrapper-inner {
-	max-width: 1000px;
+	max-width: 1100px;
 }
 
 .resume-header {
@@ -11199,6 +11199,10 @@ a.theme-btn-on-bg:active,
 	color: #fb866a;
 }
 
+.resume-body .col-lg-4 {
+	max-width: 350px;
+}
+
 @media (max-width: 767.98px) {
 	.resume-wrapper {
 		padding-top: 0;
@@ -11209,5 +11213,8 @@ a.theme-btn-on-bg:active,
 	.resume-header .picture {
 		width: 120px;
 		border-radius: 4px;
+	}
+	.resume-body .col-lg-4 {
+		max-width: none;
 	}
 }
