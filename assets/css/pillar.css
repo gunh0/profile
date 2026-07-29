@@ -1,0 +1,405 @@
+/*************************** Pillar Styles ****************************/
+/*
+ * Custom styles for the Pillar resume theme (originally by 3rd Wave Media),
+ * extracted from the compiled pillar-1.css bundle and maintained separately
+ * on top of stock Bootstrap.
+ */
+body {
+	font-family: "Roboto", "Noto Sans KR", sans-serif;
+	background: #f7f8fa;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #434e5e;
+	overflow-x: hidden;
+}
+
+a {
+	color: #434e5e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #232931;
+	text-decoration: underline;
+}
+
+a.no-text-decoration {
+	text-decoration: none;
+}
+
+a.text-link {
+	text-decoration: none;
+}
+
+a.text-link:hover {
+	text-decoration: underline;
+}
+
+.theme-bg-primary {
+	background-color: #434e5e;
+}
+
+.theme-bg-primary-darken {
+	background-color: #191d22;
+}
+
+a.theme-btn-on-bg,
+.theme-btn-on-bg {
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	border: none;
+}
+
+a.theme-btn-on-bg:hover,
+a.theme-btn-on-bg:focus,
+a.theme-btn-on-bg:active,
+.theme-btn-on-bg:hover,
+.theme-btn-on-bg:focus,
+.theme-btn-on-bg:active {
+	background: rgba(0, 0, 0, 0.4);
+	border-color: transparent;
+	border: none;
+}
+
+.progress {
+	border-radius: 2px;
+}
+
+.theme-progress-bar-dark {
+	background-color: #434e5e;
+}
+
+.resume-wrapper {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.resume-wrapper-inner {
+	max-width: 1100px;
+}
+
+.resume-header {
+	background: #434e5e;
+	color: rgba(255, 255, 255, 0.9);
+	height: 220px;
+}
+
+/* row 네거티브 마진으로 인한 헤더 가로 오버플로우 제거 */
+.resume-header .row {
+	--bs-gutter-x: 0;
+}
+
+.resume-header .picture {
+	width: 220px;
+}
+
+.resume-header .name {
+	font-size: 2.25rem;
+	letter-spacing: 0.175rem;
+	font-weight: 900;
+}
+
+.resume-header .title {
+	font-size: 1.5rem;
+}
+
+.resume-header a {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.resume-header a:hover {
+	color: white;
+}
+
+.resume-social {
+	font-size: 0.875rem;
+}
+
+.resume-social .fa-container {
+	font-size: 1rem;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 0.125rem;
+	background: white;
+	color: #434e5e;
+}
+
+.resume-section-title {
+	font-size: 1.25rem;
+	position: relative;
+	color: #434e5e;
+}
+
+.resume-section-title:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.5px;
+	background: #8d9aad;
+}
+
+.resume-section-content {
+	color: #58677c;
+}
+
+.resume-timeline {
+	padding-left: 2rem;
+}
+
+.resume-timeline:before {
+	content: "";
+	display: inline-block;
+	width: 3px;
+	height: 100%;
+	background: #aab4c3;
+	left: 6px;
+	top: 4px;
+	position: absolute;
+}
+
+.resume-timeline-item:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -32px;
+	top: 3px;
+	width: 15px;
+	height: 15px;
+	border: 4px solid #58677c;
+	background: white;
+	border-radius: 50%;
+}
+
+.resume-progress {
+	height: 0.6rem;
+}
+
+.resume-company-name {
+	color: #58677c;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.resume-position-time {
+	font-size: 0.875rem;
+	color: #aab4c3;
+}
+
+.resume-position-time-end {
+	font-size: 0.875rem;
+	color: #aab4c3;
+	text-align: right;
+	padding-top: 0.2rem;
+}
+
+.resume-position-time-inline-end {
+	font-size: 0.875rem;
+	color: #aab4c3;
+	/* heading(flex) 안에서는 margin-left로, 일반 텍스트 흐름에서는 float로 우측 정렬 */
+	display: block;
+	float: right;
+	padding-left: 0.75rem;
+	margin-left: auto;
+	white-space: nowrap;
+}
+
+.resume-position-title {
+	font-size: 1.125rem;
+	color: #434e5e;
+	font-weight: bold;
+}
+
+/* 타임라인 설명 */
+.resume-pro-experience-desc {
+	font-size: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+/* 타임라인 내부 대분류 제목 */
+.resume-timeline-detail-heading {
+	font-size: 1rem;
+	font-weight: bold;
+	padding-top: 0.5rem;
+}
+
+/* 타임라인 내부 item 전체 */
+.resume-pro-experience-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+/* 타임라인 내부 item 제목 */
+.resume-pro-experience-item-heading {
+	font-size: 1rem;
+}
+
+/* 타임라인 내부 item 설명 */
+.resume-pro-experience-item-desc {
+	font-size: 0.9rem;
+	padding-left: 2rem;
+}
+
+/* Experience 항목 전체 */
+.resume-experience-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+/* Experience 항목 제목 */
+.resume-experience-item-heading {
+	font-size: 1rem;
+}
+
+/* Experience 항목 설명 */
+.resume-experience-item-desc {
+	font-size: 0.9rem;
+	padding-left: 2rem;
+}
+
+.resume-experience-item-time {
+	color: #aab4c3;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.resume-act-item {
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+.resume-act-item-heading {
+	font-size: 1rem;
+}
+
+.resume-act-item-desc {
+	font-size: 0.9rem;
+	padding-left: 2rem;
+}
+
+/* 제목 + 우측 날짜: float 대신 flex로 정렬 (좁은 화면에서 날짜 꺾임 방지) */
+.resume-experience-item-heading:has(> .item-heading-text),
+.resume-act-item-heading:has(> .item-heading-text),
+.resume-pro-experience-item-heading:has(> .item-heading-text),
+.resume-timeline-detail-heading:has(> .item-heading-text) {
+	display: flex;
+	align-items: baseline;
+}
+
+.item-heading-text {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+/* 설명 줄: 아이콘 이후로 줄바꿈 정렬 (hanging indent) */
+.desc-line {
+	padding-left: 1.4rem;
+	text-indent: -1.4rem;
+}
+
+/* ┗ 하위 항목: 들여쓰기 유지한 채 줄바꿈 */
+.desc-sub {
+	padding-left: 2.4rem;
+	text-indent: -1rem;
+}
+
+.resume-skills-cat {
+	font-size: 1rem;
+	color: #434e5e;
+}
+
+.resume-skill-name {
+	font-size: 0.875rem;
+	color: #434e5e;
+}
+
+.resume-degree {
+	font-size: 0.9rem;
+	color: #434e5e;
+}
+
+.resume-degree-org {
+	font-size: 0.875rem;
+}
+
+.resume-degree-time {
+	color: #aab4c3;
+	font-size: 0.875rem;
+}
+
+.resume-award-icon {
+	left: 0;
+	top: 4px;
+	color: #aab4c3;
+}
+
+.resume-award-name {
+	font-size: 0.875rem;
+	color: #434e5e;
+}
+
+.resume-award-desc {
+	font-size: 0.875rem;
+	padding-left: 0.6rem;
+}
+
+.resume-award-time {
+	color: #aab4c3;
+	font-size: 0.875rem;
+	text-align: right;
+}
+
+.resume-lang-name {
+	color: #434e5e;
+}
+
+.footer .fa-heart {
+	color: #fb866a;
+}
+
+.resume-body .col-lg-4 {
+	max-width: 350px;
+}
+
+@media (max-width: 767.98px) {
+	.resume-wrapper {
+		padding-top: 0;
+	}
+	.resume-header {
+		height: auto;
+	}
+	.resume-header .picture {
+		width: 120px;
+		border-radius: 4px;
+	}
+	.resume-body .col-lg-4 {
+		max-width: none;
+	}
+}
+
+/* 인쇄(PDF 저장) 최적화 */
+@media print {
+	body {
+		background: #fff;
+	}
+	.resume-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.resume-wrapper-inner {
+		max-width: 100%;
+		box-shadow: none !important;
+	}
+	.resume-header {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	a {
+		text-decoration: none;
+	}
+}
