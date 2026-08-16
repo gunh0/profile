@@ -296,15 +296,40 @@ a.theme-btn-on-bg:active,
 	min-width: 0;
 }
 
-/* 설명 줄: 아이콘 이후로 줄바꿈 정렬 (hanging indent) */
+/* 줄 맨 앞 아이콘: 아이콘 종류(check/code/code-commit/file-lines)나
+   뒤에 링크가 오는지 여부와 무관하게 폭·간격을 고정.
+   (Bootstrap의 .list-inline-item:not(:last-child) 규칙 때문에
+   뒤에 <a>가 있는 줄만 0.5rem 더 벌어지던 문제를 제거) */
+.item-heading-text > .list-inline-item:first-child,
+.resume-act-item-heading > .list-inline-item:first-child,
+.resume-experience-item-heading > .list-inline-item:first-child,
+.resume-act-item-desc > .list-inline-item,
+.resume-experience-item-desc > .list-inline-item,
+.resume-pro-experience-item > .list-inline-item,
+.resume-pro-experience-item-desc > .list-inline-item {
+	display: inline-block;
+	width: 1.25rem;
+	margin-right: 0;
+	text-align: left;
+}
+
+/* 설명 줄: 아이콘을 흐름에서 빼내 아이콘 위치와 텍스트 시작점을 모두 고정
+   (아이콘 종류에 따라 폭이 달라도 첫 줄과 줄바꿈된 줄이 같은 위치에서 시작) */
 .desc-line {
-	padding-left: 1.4rem;
-	text-indent: -1.4rem;
+	position: relative;
+	padding-left: 1.5rem;
+}
+
+.desc-line > .list-inline-item:first-child {
+	position: absolute;
+	left: 0;
+	top: 0.25em;
+	width: auto;
 }
 
 /* ┗ 하위 항목: 들여쓰기 유지한 채 줄바꿈 */
 .desc-sub {
-	padding-left: 2.4rem;
+	padding-left: 2.5rem;
 	text-indent: -1rem;
 }
 
