@@ -391,6 +391,13 @@ a.theme-btn-on-bg:active,
 	max-width: 350px;
 }
 
+/* Bootstrap의 lg 2열이 해제되면 우측 영역도 본문 전체 폭을 사용 */
+@media (max-width: 991.98px) {
+	.resume-body .col-lg-4 {
+		max-width: none;
+	}
+}
+
 @media (max-width: 767.98px) {
 	.resume-wrapper {
 		padding-top: 0;
@@ -401,9 +408,6 @@ a.theme-btn-on-bg:active,
 	.resume-header .picture {
 		width: 120px;
 		border-radius: 4px;
-	}
-	.resume-body .col-lg-4 {
-		max-width: none;
 	}
 }
 
