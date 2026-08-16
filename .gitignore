@@ -1,5 +1,5 @@
 .DS_Store
-# Private portfolio pages (not for public deployment)
-portfolio/
 # 로컬 프로젝트 메모리 및 작업 히스토리
 /.c?????/
+# 로컬 제출용 HTML 및 생성 산출물
+/output/
