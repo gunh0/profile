@@ -357,6 +357,25 @@ a.theme-btn-on-bg:active,
 	font-size: 0.875rem;
 }
 
+.focus-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.focus-tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.35rem 0.7rem;
+	border: 1px solid #d9dfe7;
+	border-radius: 999px;
+	background: #f3f5f8;
+	color: #434e5e;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+}
+
 .resume-award-icon {
 	left: 0;
 	top: 4px;
