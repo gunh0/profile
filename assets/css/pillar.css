@@ -11,6 +11,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	color: #434e5e;
 	overflow-x: hidden;
+	/* 한글은 글자 단위가 아니라 어절(공백) 단위로 줄바꿈, 긴 URL은 넘치지 않게 강제 분리 */
+	word-break: keep-all;
+	overflow-wrap: anywhere;
 }
 
 a {
