@@ -352,6 +352,10 @@ a.theme-btn-on-bg:active,
 	font-size: 0.875rem;
 }
 
+.resume-degree-minor {
+	font-size: 0.8rem;
+}
+
 .resume-degree-time {
 	color: #aab4c3;
 	font-size: 0.875rem;
